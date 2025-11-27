@@ -1,14 +1,7 @@
-//import { defineConfig } from 'vite'
- //import react from '@vitejs/plugin-react' 
-// export default defineConfig({
+import { defineConfig } from 'vite'
+ import react from '@vitejs/plugin-react' 
+ export default defineConfig({
 
- // plugins: [react()], 
+  plugins: [react()], 
 
- //})
- import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  plugins: [react()],
-  base: '/Book-Store/',     // <–– Add this line (repo name + slashes)
-})
+ })
