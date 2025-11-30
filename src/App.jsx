@@ -19,7 +19,7 @@ import NotFound from "./components/user/NotFound";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         {/* Public Pages */}
         <Route path="/" element={<Home />} />
@@ -45,7 +45,7 @@ function App() {
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
