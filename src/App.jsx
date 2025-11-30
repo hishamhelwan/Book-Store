@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 import Home from "./components/user/Home";
 import About from "./components/user/About";
@@ -19,7 +19,7 @@ import NotFound from "./components/user/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         {/* Public Pages */}
         <Route path="/" element={<Home />} />
@@ -45,7 +45,7 @@ function App() {
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
